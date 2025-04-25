@@ -7,7 +7,7 @@ const ActiveUsers = () => {
   const [activeUsers, setActiveUsers] = useState([]);
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(null);  //hhhh
 
   useEffect(() => {
     const userData = localStorage.getItem('user');
