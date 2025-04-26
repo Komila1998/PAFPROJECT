@@ -1,10 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Layout from "../components/Layout";
-import backgroundImg from "../images/statusBck.jpg";
-import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
-import toast from "react-hot-toast";
-import { useActiveTab } from "../context/ActiveTabContext";
+
 
 const CreateWorkouStatus = () => {
   const { setActiveTab } = useActiveTab();
@@ -46,7 +40,9 @@ const CreateWorkouStatus = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!user) {
-      return;
+      return; //
+    
+
     }
 
     if (!distance || !pushups || !weight || !description || !date) {
