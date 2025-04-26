@@ -7,7 +7,7 @@ import { useActiveTab } from "../context/ActiveTabContext";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
-import { app } from "../db/firebase";
+import { app } from "../db/firebase"; //aaa
 
 const storage = getStorage(app);
 
