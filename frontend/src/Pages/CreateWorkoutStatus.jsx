@@ -131,7 +131,22 @@ const CreateWorkouStatus = () => {
           className="max-w-xl mx-auto p-6 rounded-lg shadow-md bg-transparent"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.65)" }}
         >
-          <
+          <div className="mb-4">
+            <label
+              htmlFor="distance"
+              className="block text-sl font-medium text-gray-700 "
+            >
+              Distance ran (in km)
+            </label>
+            <input
+              type="number"
+              id="distance"
+              value={distance}
+              onChange={(e) => setDistance(e.target.value)}
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              placeholder="Enter distance"
+            />
+          </div>
           <div className="mb-4">
             <label
               htmlFor="pushups"
