@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 
 const Layout = ({ children }) => {
-  
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [user, setUser] = useState(null);
 
   useEffect(() => {
