@@ -113,7 +113,7 @@ const PostsList = ({
     setComment(comment.content);
     setEditComment(true);
   };
-
+//
   const handleShare = async (e) => {
     e.preventDefault();
     try {
@@ -131,7 +131,7 @@ const PostsList = ({
       console.log(error);
     }
   };
-
+//
   return (
     <div>
       <div className="h-full w-full bg-gray-50 flex items-center justify-center">
