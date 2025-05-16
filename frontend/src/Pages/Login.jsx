@@ -14,7 +14,7 @@ const formSchema = yup.object().shape({
     "Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one special symbol"
   ),
 });
-
+////
 export default function Login() {
   const navigate = useNavigate();
   const { register, handleSubmit, formState: { errors, isSubmitting }, trigger } = useForm({
@@ -47,7 +47,7 @@ export default function Login() {
       }
     }
   };
-
+//
   return (
     <div 
       className="min-h-screen flex items-center justify-center p-4"
@@ -143,3 +143,4 @@ export default function Login() {
     </div>
   );
 }
+//
