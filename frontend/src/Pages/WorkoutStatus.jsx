@@ -101,7 +101,10 @@ const WorkoutStatus = ({ user }) => {
                   <p className="text-sm text-gray-600">Distance</p>
                   <p className="text-lg font-semibold">{status.distance} <span className="text-sm">km</span></p>
                 </div>
-                
+                <div className="bg-blue-50 p-3 rounded-lg">
+                  <p className="text-sm text-gray-600">Push-ups</p>
+                  <p className="text-lg font-semibold">{status.pushUps}</p>
+                </div>
                 <div className="bg-green-50 p-3 rounded-lg">
                   <p className="text-sm text-gray-600">Weight</p>
                   <p className="text-lg font-semibold">{status.weight} <span className="text-sm">kg</span></p>
