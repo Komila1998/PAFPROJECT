@@ -212,7 +212,7 @@ const CreateWorkouStatus = () => {
             {editStatus ? "Update Status" : "Create Status"}
           </button>
           <button
-            onClick={goToWorkoutStatus}
+            onClick={goToWorkoutStatus}///
             className="w-full px-4 mt-2 py-2 text-sm font-medium text-black bg-transparent rounded-md shadow hover:bg-red-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
             Cancel
@@ -223,4 +223,4 @@ const CreateWorkouStatus = () => {
   );
 };
 
-export default CreateWorkouStatus;
+
