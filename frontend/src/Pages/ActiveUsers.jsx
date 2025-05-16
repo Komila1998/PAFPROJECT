@@ -17,7 +17,7 @@ const ActiveUsers = () => {
   }, []);
 
   useEffect(() => {
-    const fetchActiveUsers = async () => {
+    const fetchActiveUsers = async () => {  //
       try {
         setIsLoading(true);
         setError(null);
@@ -33,7 +33,7 @@ const ActiveUsers = () => {
         setActiveUsers([]);
       } finally {
         setIsLoading(false);
-      }
+      }//
     };
 
     if (user) {
