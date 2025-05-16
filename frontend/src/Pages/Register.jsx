@@ -22,17 +22,7 @@ const formSchema = yup.object().shape({
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
       "Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one special symbol"
     ),
-  confirmPassword: yup
-    .string()
-    .required("Confirm Password is required")
-    .oneOf([yup.ref("password")], "Passwords must match"),
-  phone: yup
-    .string()
-    .required("Phone number is required")
-    .matches(/^[0-9]+$/, "Phone number must contain only numeric characters")
-    .min(10, "Phone number must be at least 10 digits")
-    .max(15, "Phone number must not exceed 15 digits"),
-});
+  
 
 export default function Register() {
   const navigate = useNavigate();
