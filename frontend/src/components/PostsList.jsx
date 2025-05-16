@@ -10,7 +10,7 @@ import { IoClose } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { useState } from "react";
-
+//
 const PostsList = ({
   post,
   user,
@@ -40,7 +40,7 @@ const PostsList = ({
       console.log(error);
     }
   };
-
+//
   const navigateEditPage = () => {
     navigate(`/post/${post.id}`);
   };
@@ -53,7 +53,7 @@ const PostsList = ({
     } catch (error) {
       console.log(error);
     }
-  };
+  };//
 
   const commentAdd = async (e) => {
     e.preventDefault();
@@ -95,7 +95,7 @@ const PostsList = ({
         console.log(error);
       }
     }
-  };
+  };  //
 
   const deleteComment = async (comment) => {
     try {
@@ -107,7 +107,7 @@ const PostsList = ({
     } catch (error) {
       console.log(error);
     }
-  };
+  };//
 
   const handleEditComment = (comment, postId) => {
     setComment(comment.content);
