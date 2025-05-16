@@ -18,7 +18,7 @@ const CreateMealPlan = () => {
   const [source, setSource] = useState("");
   const [isLoading, setIsLoading] = useState(false); //
 
-  const { setActiveTab } = useActiveTab();
+  const { setActiveTab } = useActiveTab();  //
 
   const { mealPlanId } = useParams();
 
@@ -29,12 +29,12 @@ const CreateMealPlan = () => {
       toast.error("Please select at least one image");
     }
 
-    const currentFile = selectedFiles[0];
+    const currentFile = selectedFiles[0]; //
     setImage(currentFile);
   };
 
   useEffect(() => {
-    const fetchSingleMealPlan = async () => {
+    const fetchSingleMealPlan = async () => {  //
       try {
         const { data } = await axios.get(
           `http://localhost:8080/mealPlans/${mealPlanId}`
