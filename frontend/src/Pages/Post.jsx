@@ -18,7 +18,7 @@ const formSchema = yup.object().shape({
   description: yup.string().required("Description is required"),
 });
 
-const getVideoDurationInSeconds = (file) => {
+const getVideoDurationInSeconds = (file) => {  //
   return new Promise((resolve, reject) => {
     const video = document.createElement("video");
     video.preload = "metadata";
@@ -119,7 +119,7 @@ const Post = () => {
       setImages([]);
       return;
     }
-
+     //
     if (selectedFiles.length > 3) {
       setError("images", {
         type: "manual",
@@ -130,7 +130,7 @@ const Post = () => {
       setImages([...selectedFiles]);
     }
   }
-
+//
   function onVideoChange(e) {
     const selectedFile = e.target.files[0];
 
@@ -149,7 +149,7 @@ const Post = () => {
       });
     }
   }
-
+//
   const onSubmit = async (data) => {
     if (!editPost) {
       if (!imageSelected && !video) {
@@ -199,7 +199,7 @@ const Post = () => {
           username: user.name,
           userProfile: user.profileImage,
         };
-
+//
         if (editPost) {
           try {
             const res = await axios.put(
