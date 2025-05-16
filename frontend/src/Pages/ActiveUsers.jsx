@@ -105,7 +105,7 @@ const ActiveUsers = () => {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </Link>  //
             ))}
           </div>
         )}
