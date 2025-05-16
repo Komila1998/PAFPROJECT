@@ -11,7 +11,7 @@ const MainSideBar = ({ user, isOpen }) => {
       console.error("Logout failed", error);
     }
   };
-
+//
   const navItems = [
     { path: "/", icon: <FaHome className="w-5 h-5" />, label: "Home" },
     { path: "/post", icon: <FaPlus className="w-5 h-5" />, label: "Create Post" },
@@ -19,7 +19,7 @@ const MainSideBar = ({ user, isOpen }) => {
     { path: "/CreateWorkoutPlan", icon: <FaClipboardList className="w-5 h-5" />, label: "Workout Plan" },
     { path: "/CreateMealPlan", icon: <FaUtensils className="w-5 h-5" />, label: "Meal Plan" },
     { path: "/active-users", icon: <FaUsers className="w-5 h-5" />, label: "Active Users" },
-  ];
+  ];//
 
   return (
     <div 
@@ -53,7 +53,7 @@ const MainSideBar = ({ user, isOpen }) => {
             </div>
           </Link>
         </div>
-
+//
         {/* Navigation */}
         <nav className="flex-1 px-4 py-2 overflow-y-auto">
           <div className="space-y-2">
@@ -90,5 +90,5 @@ const MainSideBar = ({ user, isOpen }) => {
     </div>
   );
 };
-//
+//////
 export default MainSideBar;
