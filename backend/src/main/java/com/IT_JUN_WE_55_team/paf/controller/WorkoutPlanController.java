@@ -21,7 +21,7 @@ import com.IT_JUN_WE_55_team.paf.service.WorkoutPlanService;
 @RestController
 @RequestMapping("/workoutPlans")
 public class WorkoutPlanController {
-//
+
     @Autowired
     private WorkoutPlanService workoutPlanService;
 
