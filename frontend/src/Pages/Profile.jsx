@@ -104,14 +104,7 @@ const Profile = () => {
               />
 
               {loginUser?.id !== user?.id ? (
-                <button
-                  onClick={handleFollowUser}
-                  className="bg-blue-700 text-white px-4 py-2 rounded-3xl"
-                >
-                  {user?.followingUsers?.includes(loginUser?.id)
-                    ? "Unfollow"
-                    : "Follow"}
-                </button>
+                
               ) : null}
             </div>
 
