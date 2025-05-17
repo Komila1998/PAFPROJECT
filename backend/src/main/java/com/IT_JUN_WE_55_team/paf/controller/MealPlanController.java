@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.IT_JUN_WE_55_team.paf.model.MealPlan;
 import com.IT_JUN_WE_55_team.paf.service.MealPlanService;
-////
+
 @RestController
 @RequestMapping("/mealPlans")
 public class MealPlanController {
@@ -52,7 +52,7 @@ public class MealPlanController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
-//
+
     @DeleteMapping("/{mealPlanId}")
     public ResponseEntity<Void> deleteMealPlan(@PathVariable String mealPlanId) {
         mealPlanService.deleteMealPlan(mealPlanId);
