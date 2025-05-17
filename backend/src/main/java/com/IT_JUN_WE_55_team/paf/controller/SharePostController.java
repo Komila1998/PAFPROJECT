@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import com.IT_JUN_WE_55_team.paf.DTO.ShareDTO;
 import com.IT_JUN_WE_55_team.paf.model.SharePostModel;
 import com.IT_JUN_WE_55_team.paf.service.SharePostService;
-
+//import
 import java.util.List;
 @RestController
 @RequestMapping("/share")
@@ -39,3 +39,4 @@ public class SharePostController {
     }
 
 }
+//
