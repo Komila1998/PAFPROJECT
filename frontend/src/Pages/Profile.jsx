@@ -87,7 +87,14 @@ const Profile = () => {
             <p className="py-5 text-xl font-bold  ml-1 ">{user?.name}</p>
           </section> */}
 
-          
+          <section>
+            <img
+              className="w-full h-64 object-cover"
+              src="https://hometriangle.com/blogs/content/images/2022/02/Home-Gym-for-Small-Spaces-1.png"
+              alt=""
+            />
+          </section>
+
           <section className="pl-6">
             <div className="flex justify-between items-start mt-5 h-20 ">
               <img
