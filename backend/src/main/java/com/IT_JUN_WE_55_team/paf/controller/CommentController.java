@@ -17,7 +17,7 @@ public class CommentController {
 
     @Autowired
     private CommentService commentService;
-
+//
     @GetMapping
     public ResponseEntity<List<Comment>> getCommentsForPost(@PathVariable String postId) {
         List<Comment> comments = commentService.getCommentsForPost(postId);
