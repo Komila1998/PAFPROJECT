@@ -4,9 +4,9 @@ import { TERipple } from "tw-elements-react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { AiFillDelete, AiFillEdit } from "react-icons/ai";  //
+import { AiFillDelete, AiFillEdit } from "react-icons/ai";  
 
-const MealPlan = ({ user }) => {   //
+const MealPlan = ({ user }) => {   
   const [mealPlans, setMealPlans] = useState([]);
   const navigate = useNavigate();
 
@@ -15,13 +15,13 @@ const MealPlan = ({ user }) => {   //
       try {
         const res = await axios.get("http://localhost:8080/mealPlans");
         if (res.status === 200) {
-          setMealPlans(res.data);  //
+          setMealPlans(res.data);  
         }
       } catch (error) {
         toast.error("Failed to fetch meal plans");
       }
     };
-    fetchMealPlans();  //
+    fetchMealPlans();  
   }, []);
 
   //Delete Meal Plan by ID
