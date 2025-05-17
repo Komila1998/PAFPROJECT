@@ -12,7 +12,7 @@ const MacronutrientsCalculator = () => {
         fat: '',
         quantity: 1,
     });
-
+//
     const handleNewItemChange = (e) => {
         const { name, value } = e.target;
         setNewItem((prevItem) => ({
@@ -203,7 +203,7 @@ const MacronutrientsCalculator = () => {
                     </div>
                 ))}
             </div>
-
+//
 
             {/* Total Nutrients */}
             <div className="mt-6 p-4 bg-white rounded shadow">
@@ -218,3 +218,4 @@ const MacronutrientsCalculator = () => {
 };
 
 export default MacronutrientsCalculator;
+//
