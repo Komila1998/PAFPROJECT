@@ -10,7 +10,7 @@ const WorkoutPlan = ({ user }) => {
   const [workoutPlans, setWorkoutPlans] = useState([]);
 
   const navigate = useNavigate();
-
+//
 
   useEffect(() => {
     const fetchWorkoutPlans = async () => {
@@ -140,3 +140,4 @@ const WorkoutPlan = ({ user }) => {
 
 
 export default WorkoutPlan;
+//
