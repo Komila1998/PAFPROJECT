@@ -95,21 +95,7 @@ const WorkoutStatus = ({ user }) => {
               </div>
             </div>
             
-            <div className="space-y-3 mt-4">
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-purple-50 p-3 rounded-lg">
-                  <p className="text-sm text-gray-600">Distance</p>
-                  <p className="text-lg font-semibold">{status.distance} <span className="text-sm">km</span></p>
-                </div>
-                <div className="bg-blue-50 p-3 rounded-lg">
-                  <p className="text-sm text-gray-600">Push-ups</p>
-                  <p className="text-lg font-semibold">{status.pushUps}</p>
-                </div>
-                <div className="bg-green-50 p-3 rounded-lg">
-                  <p className="text-sm text-gray-600">Weight</p>
-                  <p className="text-lg font-semibold">{status.weight} <span className="text-sm">kg</span></p>
-                </div>
-              </div>
+            
               
               <div className="mt-4 bg-gray-50 p-4 rounded-lg">
                 <h3 className="text-md font-semibold text-gray-700 mb-2">Workout Description</h3>
