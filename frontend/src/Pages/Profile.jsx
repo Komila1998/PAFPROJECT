@@ -30,7 +30,7 @@ const Profile = () => {
 
     fetchData();
   }, [userId, reFetchUser]);
-//
+
   useEffect(() => {
     const fetchUserPosts = async () => {
       try {
@@ -159,6 +159,6 @@ const Profile = () => {
     </Layout>
   );
 };
-//
+
 export default Profile;
 ////
