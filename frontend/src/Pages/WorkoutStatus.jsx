@@ -60,17 +60,7 @@ const WorkoutStatus = ({ user }) => {
             key={index}
             className="bg-white shadow-lg rounded-lg p-6 w-[600px] hover:shadow-xl transition-shadow duration-300"
           >
-            <div className="flex justify-between items-center mb-4">
-              <div className="flex items-center space-x-4">
-                <div className="relative">
-                  <img
-                    src={status?.userProfile}
-                    alt="user"
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
-                </div>
-                <div>
+           
                   <h2 className="text-lg font-semibold text-gray-800">{status?.username}</h2>
                   <p className="text-sm text-gray-500">Workout on {status.date}</p>
                 </div>
