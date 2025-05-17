@@ -61,7 +61,7 @@ const CreateMealPlan = () => {
     const user = JSON.parse(localStorage.getItem("user"));
     setUser(user);
   }, []);
-
+//
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -95,7 +95,7 @@ const CreateMealPlan = () => {
       await uploadBytes(imageRef, image);
       imageUrl = await getDownloadURL(imageRef);
     }
-
+//
     const mealPlanData = {
       userId: user.id,
       mealType: selectedMealType,
@@ -121,7 +121,7 @@ const CreateMealPlan = () => {
       source: imageUrl ? imageUrl : source,
       date,
     };
-
+//
     console.log(mealPlanData);
 
     if (editMealPlans) {
@@ -176,7 +176,7 @@ const CreateMealPlan = () => {
       }
     }
   };
-
+//
   const navigate = useNavigate();
 
   const goToMealPlans = () => {
@@ -341,5 +341,5 @@ const CreateMealPlan = () => {
     </Layout>
   );
 };
-
+//
 export default CreateMealPlan;
