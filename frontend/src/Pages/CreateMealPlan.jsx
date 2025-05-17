@@ -77,7 +77,7 @@ const CreateMealPlan = () => {
     if (!user) {
       return;
     }
-
+//if
     if (
       !selectedMealType ||
       !selectedDietaryPreference ||
@@ -117,7 +117,7 @@ const CreateMealPlan = () => {
       source: imageUrl,
       date,
     };
-
+//update
     const updateMealPlanData = {
       userId: user.id,
       mealType: selectedMealType,

@@ -147,7 +147,7 @@ console.log(selectedWorkout)
   const goToWorkoutPlans = () => {
     navigate("/");
   };
-
+//
   return (
     <Layout>
       <div
@@ -307,3 +307,4 @@ console.log(selectedWorkout)
 };
 
 export default CreateWorkoutPlan;
+//
