@@ -12,7 +12,7 @@ const MacronutrientsCalculator = () => {
         fat: '',
         quantity: 1,
     });
-//
+
     const handleNewItemChange = (e) => {
         const { name, value } = e.target;
         setNewItem((prevItem) => ({
