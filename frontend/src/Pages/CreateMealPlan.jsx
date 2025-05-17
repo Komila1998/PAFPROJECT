@@ -16,9 +16,9 @@ const CreateMealPlan = () => {
   const [user, setUser] = useState({});
   const [editMealPlans, setEditMealPlans] = useState(false);
   const [source, setSource] = useState("");
-  const [isLoading, setIsLoading] = useState(false); //
+  const [isLoading, setIsLoading] = useState(false); 
 
-  const { setActiveTab } = useActiveTab();  //
+  const { setActiveTab } = useActiveTab();  
 
   const { mealPlanId } = useParams();
 
@@ -29,12 +29,12 @@ const CreateMealPlan = () => {
       toast.error("Please select at least one image");
     }
 
-    const currentFile = selectedFiles[0]; //
+    const currentFile = selectedFiles[0]; 
     setImage(currentFile);
   };
 
   useEffect(() => {
-    const fetchSingleMealPlan = async () => {  //
+    const fetchSingleMealPlan = async () => {  
       try {
         const { data } = await axios.get(
           `http://localhost:8080/mealPlans/${mealPlanId}`
@@ -61,7 +61,7 @@ const CreateMealPlan = () => {
     const user = JSON.parse(localStorage.getItem("user"));
     setUser(user);
   }, []);
-//
+//submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -95,7 +95,7 @@ const CreateMealPlan = () => {
       await uploadBytes(imageRef, image);
       imageUrl = await getDownloadURL(imageRef);
     }
-//
+//mealplan data
     const mealPlanData = {
       userId: user.id,
       mealType: selectedMealType,
@@ -121,7 +121,7 @@ const CreateMealPlan = () => {
       source: imageUrl ? imageUrl : source,
       date,
     };
-//
+
     console.log(mealPlanData);
 
     if (editMealPlans) {
@@ -176,7 +176,7 @@ const CreateMealPlan = () => {
       }
     }
   };
-//
+
   const navigate = useNavigate();
 
   const goToMealPlans = () => {
@@ -341,5 +341,5 @@ const CreateMealPlan = () => {
     </Layout>
   );
 };
-//
+
 export default CreateMealPlan;
