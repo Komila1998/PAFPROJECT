@@ -24,7 +24,7 @@ const MealPlan = ({ user }) => {   //
     fetchMealPlans();  //
   }, []);
 
-  // Delete Meal Plan by ID
+  //Delete Meal Plan by ID
   const deleteMealPlan = async (mealPlan) => {
     try {
       await axios.delete(`http://localhost:8080/mealPlans/${mealPlan.mealPlanId}`);
@@ -134,5 +134,5 @@ const MealPlan = ({ user }) => {   //
     </div>
   );
 };
-
+////
 export default MealPlan;
